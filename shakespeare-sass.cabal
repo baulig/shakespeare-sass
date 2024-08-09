@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           shakespeare-sass
+version:        0.1.4.1
+synopsis:       SASS support for Shakespeare and Yesod
+description:    SASS support for Shakespeare and Yesod
+category:       Web
+homepage:       https://github.com/brcha/shakespeare-sass#readme
+bug-reports:    https://github.com/brcha/shakespeare-sass/issues
+author:         Filip Brcic
+maintainer:     brcha@yandex.com
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/brcha/shakespeare-sass
+
+library
+  exposed-modules:
+      Text.Shakespeare.Sass
+  other-modules:
+      Paths_shakespeare_sass
+  hs-source-dirs:
+      src
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+  build-depends:
+      base ==4.*
+    , hsass
+    , shakespeare
+    , template-haskell
+    , yesod
+    , yesod-core
+  default-language: Haskell2010
