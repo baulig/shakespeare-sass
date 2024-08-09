@@ -5,7 +5,7 @@ packages:
 
 extra-deps:
 - git: https://github.com/baulig/hsass.git
-  commit: 344653817caf2a1c831cce68a185521fca54fa9d
+  commit: cc0c32f6e808ece3279fcb9ee69512d7b0fec503
 
 flags: {}
 extra-package-dbs: []
